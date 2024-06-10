@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "scripts": {
+    "dev": "tsup --watch --onSuccess \"node --import ./dist/instrument.js dist/index.js\""
+  },
+  "dependencies": {
+    "@sentry/node": "^8.8.0",
+    "fastify": "^4.27.0",
+    "openai": "^4.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.3.0"
+}
