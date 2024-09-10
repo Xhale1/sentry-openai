@@ -1,13 +1,5 @@
 import * as Sentry from "@sentry/node";
 import Fastify from "fastify";
-import OpenAI from "openai";
-
-const openAI = new OpenAI({
-  apiKey: "example",
-});
-
-// You don't need this, I just wanted to make linting happy :)
-console.log(openAI.apiKey);
 
 const fastify = Fastify();
 
