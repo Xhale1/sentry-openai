@@ -6,4 +6,5 @@ Sentry.init({
   // The following lines are required to see the issue
   integrations: [nodeProfilingIntegration()],
   tracesSampleRate: 1,
+  profilesSampleRate: 1,
 });
